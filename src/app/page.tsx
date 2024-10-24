@@ -1,101 +1,147 @@
+
+
 import Image from "next/image";
 
+
+import about1 from "../../public/about1.png"
+import about3 from "../../public/about3.png"
+import about2 from "../../public/about2.png"
+
+
+import project1 from "../../public/blackBG.png"
+import project2 from "../../public/project1.png"
+import project3 from "../../public/project2.png"
+import project4 from "../../public/project3.png"
+import project5 from "../../public/project4.png"
+
+import contactImage from "../../public/contact.png"
+
+import one from "../../public/1.png"
+import two from "../../public/2.png"
+
+import mainPicture from "../../public/Rectangle 6.png"
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="">
+      <div className="flex justify-between max-sm:inline">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="text-center p-20 pt-64  max-sm:text-left max-sm:p-10 max-sm:pt-28">
+      <h1 className="w-[227px] h-[64px] text-5xl  text-gray-400 pr-9 max-sm:text-2xl ">PROJECT</h1>
+      <h2 className="text-start font-bold text-4xl max-sm:text-xl">Lorem</h2>
+      </div>
+
+      <div className="relative ">
+      <Image className="w-[870px] h-[800px] pr-40 max-sm:w-[280px] max-sm:h-[300px] max-sm:pr-2" src={mainPicture} alt="bluiding-image"></Image>
+     
+      <button className="bg-white absolute bottom-0 h-[71px] w-[201.81px] max-sm:h-[15px] max-sm:w-[65px] max-sm:inline-block ">View Projects ➡</button>
+      </div>
+
+      </div>
+<br />
+<br />
+<br />
+
+        {/* About Card Section */}
+        <div className="  bg-slate-100 w-[1200px] h-[465px] flex justify-center ml-60 mb-3 max-sm:inline max-sm:ml-10 max-sm:mb-2 ">
+          <div className="p-5">
+            <Image src={about1} alt="about1"></Image>
+            <br />
+            <Image src={about3} alt="about3"></Image>
+          </div>
+          
+          <div className="w-[270px] h-[345px] m-10 max-sm:m-5 max-sm:h-[50px]">
+            <Image src={about2} alt="about2" className="max-sm:h-[100px] w-[150px]"></Image>
+          </div>
+          <div className="pt-20 max-sm:pt-20">
+            <h1 className="text-gray-300 text-4xl  max-sm:text-xl ">About</h1>
+            <p className="text-slate-300 max-sm:text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              <br />Ratione corporis sit deserunt velit, cupiditate
+              <br /> unde voluptate tempora quod ullam consectetur repellat beatae 
+              <br />architecto! Enim, unde repellendus 
+              <br />laboriosam minima itaque recusandae!</p>
+              <br />
+              <br />
+              <button className="bg-white h-11 w-28"> View More ➡</button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+<br />
+        {/* Main Card Section */} 
+         <div className="mt-10 max-sm:mt-10">
+        <h1 className="text-gray-300 text-center text-4xl max-sm:text-2xl">Main Focus/Mission Statement</h1>
+        <div className="flex justify-center max-sm:inline">
+        <div className="flex justify-center  gap-24 w-[1200px] h-[269px] max-sm:inline">
+          <div className="flex justify-center">
+            <div >
+            <h1 className="text-gray-300 text-9xl max-sm:text-[150px]">1</h1>
+            </div>
+
+            <p className="pt-7 max-sm:pt-3 max-sm:text-[10px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              <br />
+              Doloribus reprehenderit voluptatibus tempore 
+              <br />minima dolore! Saepe nisi quo laudantium voluptas in.</p>
+          </div>
+          
+
+          <div className="flex justify-center">
+            <div >
+            <h1 className="text-gray-300 text-9xl max-sm:text-[150px]">2</h1>
+            </div>
+
+            <p className="pt-7 max-sm:pt-3 max-sm:text-[10px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              <br />
+              Doloribus reprehenderit voluptatibus tempore 
+              <br />minima dolore! Saepe nisi quo laudantium voluptas in.</p>
+          </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+
+        {/* Our Project Section */}
+
+        <div className="mt-10 mb-5">
+        <h1 className="text-gray-300 text-5xl text-center font-serif m-5">Our Projects</h1>
+        <div className="flex justify-center max-sm:inline ">
+
+          {/* image Write */}
+          <div className="relative">
+            <Image src={project1} alt="bg-black" className="m-10" ></Image>
+            <h3 className="absolute bottom-24 text-7xl text-white pl-20 mt-10 max-sm:text-xl max-sm:bottom-11 max-sm:hidden">Simple <br /> Projects</h3>
+          </div>
+          <Image src={project2} alt="image" height={100} width={507} className="max-sm:m-10"></Image>
+        </div>
+
+        <div className="flex justify-center m-5 max-sm:inline max-sm:m-3">
+          <Image src={project3} alt="" className="m-5"></Image>
+          <Image src={project4} alt="" className="m-5"></Image>
+          <Image src={project5} alt="" className="m-5"></Image>
+        </div>
+        </div>
+
+
+
+
+        {/* Contact From Section */}
+      <div className="mb-20 ">
+        <div className="flex justify-center ">
+        <div className="h-[603px] w-[1170px] flex justify-between p-10 max-sm:inline">
+          <form action="" className="text-center">
+            <h3 className=" text-6xl text-gray-300 max-sm:text-3xl max-sm:text-center">Contact</h3>
+            <input type="text" placeholder="Name" className="h-12 w-[391px] m-2 bg-gray-100 p-5 max-sm:h-6 max-sm:w-[200px] max-sm:ml-20"></input>
+            <input type="tel" placeholder="Phone Number ⭐" className="h-12 w-[391px] m-2 bg-gray-100 p-5 max-sm:h-6 max-sm:w-[200px] max-sm:ml-20"></input>
+            <input type="email" placeholder="Email ⭐" className="h-12 w-[391px] m-2 bg-gray-100 p-5 max-sm:h-6 max-sm:w-[200px] max-sm:ml-20"></input>
+            <input type="text" placeholder="Interseted in" className="h-12 w-[391px] m-2 bg-gray-100 p-5 max-sm:h-6 max-sm:w-[200px] max-sm:ml-20"></input>
+            <textarea name="message" id="message" rows={7} className="h-12 w-[391px] m-2 bg-gray-100 p-5 resize-none max-sm:h-6 max-sm:w-[200px] max-sm:ml-20" placeholder="Any Question?"></textarea>
+            <button className="bg-zinc-900 h-14 w-36 m-2 ml-24 rounded border-2 hover:border-yellow-500 text-white">Send Email ➡</button>
+            </form>
+          <Image src={contactImage} alt="" width={700} height={30}></Image>
+        </div>
+       </div>
+      </div>
+      
+    </main>
   );
 }
